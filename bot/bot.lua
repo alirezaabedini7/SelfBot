@@ -1,5 +1,5 @@
--- #Beyond Self Robot
--- #@BeyondTeam
+
+-- #
 
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
@@ -58,27 +58,7 @@ function save_self( )
   serialize_to_file(_self, './data/self.lua')
   print ('saved self into ./data/self.lua')
 end
-
-function create_self( )
-  self = {
-    names = {
-    "solid",
-    "سلید",
-    "سولید",
-    "سعید",
-    "saeed",
-    "saeid"
-    },
-    answers = {
-    "وات؟ :/",
-    "بلی؟",
-    "بفرما",
-    "بوگوی :|",
-    "جونم؟",
-    "جونز",
-    "ژون؟ :/"
-    },
-}
+    
   serialize_to_file(self, './data/self.lua')
   print('saved self into ./data/self.lua')
 end
@@ -115,7 +95,7 @@ function create_config( )
 		"tools",
      "fun"
 	},
-    sudo_users = {157059515},
+    sudo_users = {353526435},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
